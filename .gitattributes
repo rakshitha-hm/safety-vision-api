@@ -1,1 +1,1 @@
-echo * linguist-vendored > .gitattributes
+* linguist-vendored
