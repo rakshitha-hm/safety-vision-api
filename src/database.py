@@ -2,9 +2,10 @@ import sqlite3
 from contextlib import contextmanager
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+import os
 
 ROOT = Path(__file__).resolve().parent.parent
-DB_PATH = ROOT / "data" / "safety.db"
+DB_PATH = Path(os.getenv("DB_PATH", ROOT / "data" / "safety.db"))
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS predictions (

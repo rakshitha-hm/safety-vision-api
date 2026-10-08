@@ -1,0 +1,9 @@
+.venv/
+.git/
+data/
+runs/
+results/
+notebooks/
+docs/
+__pycache__/
+*.ipynb

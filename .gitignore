@@ -4,3 +4,4 @@ runs/
 .venv/
 yolo11n.pt
 yolo11s.pt
+!models/*.pt

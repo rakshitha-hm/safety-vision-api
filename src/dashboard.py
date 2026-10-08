@@ -3,8 +3,9 @@ import numpy as np
 import pandas as pd
 import requests
 import streamlit as st
+import os
 
-API_URL = "http://127.0.0.1:8000"
+API_URL = os.getenv("API_URL", "http://127.0.0.1:8000")
 LOCATIONS = ["ward_1", "ward_2", "icu", "default"]
 COLORS = {  # RGB, because Streamlit displays RGB images
     "with_mask": (0, 200, 0),

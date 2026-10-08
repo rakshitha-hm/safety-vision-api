@@ -1,11 +1,12 @@
 from pathlib import Path
 import torch
+import os
 
 import numpy as np
 from ultralytics import YOLO
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_WEIGHTS = ROOT / "runs/exp_yolo11s/weights/best.pt"
+DEFAULT_WEIGHTS = Path(os.getenv("MODEL_PATH", ROOT / "models" / "mask_detector.pt"))
 
 
 class MaskDetector:
