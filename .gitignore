@@ -1,0 +1,6 @@
+data/
+runs/
+*.pt
+.venv/
+yolo11n.pt
+yolo11s.pt

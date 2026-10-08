@@ -1,0 +1,9 @@
+model,class,precision,recall,mAP50,mAP50-95
+baseline,with_mask,0.935,0.896,0.951,0.655
+baseline,without_mask,0.796,0.818,0.877,0.575
+baseline,mask_weared_incorrect,0.78,0.611,0.627,0.453
+baseline,all,0.837,0.775,0.819,0.561
+final_yolo11s,with_mask,0.962,0.89,0.968,0.663
+final_yolo11s,without_mask,0.935,0.898,0.94,0.623
+final_yolo11s,mask_weared_incorrect,0.817,0.556,0.73,0.51
+final_yolo11s,all,0.905,0.781,0.88,0.599
